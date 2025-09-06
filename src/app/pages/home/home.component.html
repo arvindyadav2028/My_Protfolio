@@ -1,0 +1,126 @@
+<section class="profile-section">
+    <div class="row">
+        <div class="col-md-8">
+           <div class="profile-section">
+            <div class="profile-headline">
+               
+                 <h2>Hi,
+                    <br /> 
+                I'm  <span class="profile-name">Kamal </span> </h2>
+
+                <h3> Front-end / UI Developer </h3>
+                    <!-- <h2>
+                        My passion is transforming innovative ideas into real-world products.
+                    </h2> -->
+
+                <button class="btn btn-primary" routerLink="/contact">Hire Me <span class="right-arrow"><img src="../../../assets/images/right-arrow.png" alt="Hire"/> </span> </button>
+            </div>
+            <span class="profile-img">
+                <img src="assets/images/kp-profile-new.png" alt="Profile Image" />
+            </span>
+
+            <ul class="connect-on-social-media">
+
+                <li><a href="https://www.linkedin.com/in/kamalprakash" target="_blank">
+                    <img src="../../../assets/images/linked-in.png" alt="LinkedInProfile" />
+                </a></li>
+                
+                <li><a href="https://github.com/kamalprakashverma" target="_blank">
+                    <img src="../../../assets/images/git.png" alt="GithubProfile" />
+                </a></li>
+                <li><a href="https://www.facebook.com/kamalprakashv" target="_blank">
+                    <img src="../../../assets/images/facebook.png" alt="facebook" />
+                </a></li>
+                <li><a href="https://x.com/KamalPrakash_" target="_blank">
+                    <img class="big-icon" src="../../../assets/images/twitter.png" alt="twitter" />
+                </a></li>
+                <li><a href="https://www.instagram.com/kamalprakash_" target="_blank">
+                    <img class="big-icon" src="../../../assets/images/instagram.png" alt="Instagram" />
+                </a></li>
+            </ul>
+
+            <div class="dribble-icon">
+                <a href="https://dribbble.com/kpverma"> 
+                    <span class="icon"> <img src="../../../assets/images/dribble-icon.png" alt="Dribble" /> 
+                    </span> www.dribbble.com/kpverma
+                </a>
+            </div>
+           </div>
+        </div>
+        <div class="col-md-4">
+            <div class="profile-description">
+                <h4>Specialist in</h4>
+              <div class="mt-4">
+                <h3>Based in Noida, India, I am a proficient UI/UX and Front-end Developer.</h3>
+              </div>
+              <div class="mt-4">
+                <p>Are you in need of a UI/UX Developer to elevate your brand and expand your business? Let's collaborate!</p>
+              </div>
+            <div>
+                <a class="download-btn" href="../../../assets/documents/KamalPrakashVermaResume.pdf" download="Kamal-Prakash">
+                    Download Resume
+                  <img src="../../../assets/images/download.png" alt="Resume download button" className="download-img" />
+                      
+                  </a>
+
+            </div>
+
+            
+            
+                <div [ngClass]="isChabot ? 'showChatbot' : 'hideChatbot' ">
+                    <span class="chat-btn" (click)="toggleChatBot()">
+                        Let's Chat <img src="../../../assets/images/message.png" alt="Chat Button" />
+                    </span>
+                    @if(isChabot){
+                         <app-chat></app-chat>
+                     }
+                </div>
+           
+            </div>
+        </div>
+        
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="work-hard">
+                <span class="palning-icon">
+                    <img src="../../../assets/images/planning.png" alt="Planning" />
+                </span>
+                  
+            </div>
+            <h2 class="exp-title">Every piece of work is unique. Here are some examples.</h2>
+        </div>
+    </div>
+
+    <div class="project-short-desc">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="project-box">
+                     <img src="../../../assets/images/portfolio/project2.png" alt="Recent Projects" />
+                    <div class="projectb-description">
+                        <h3>Nutra</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="project-box">
+                     <img src="../../../assets/images/portfolio/project3.png" alt="Recent Projects" />
+                    <div class="projectb-description">
+                        <h3>Appia</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="project-box">
+                     <img src="../../../assets/images/portfolio/project4.png" alt="Recent Projects" />
+                    <div class="projectb-description">
+                        <h3>Safe Water</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

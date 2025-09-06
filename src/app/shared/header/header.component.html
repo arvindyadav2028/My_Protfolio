@@ -1,0 +1,63 @@
+<header data-bs-theme="dark" class="header-wrapper">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-static bg-dark">
+      <div class="container">
+        <a [routerLink]="['/']" class="navbar-brand" routerLink="/"> 
+           <!-- <img src="../../../assets/images/kp-sign.png" alt="Kamal" /> -->
+           <span class="my-logo">
+            <span class="logo-text">
+              <div class="top-logo">
+                kam
+              </div>
+              <div class="bottom-logo">
+                al
+              </div>
+            </span>
+          
+            <svg  xml:lang="en"  viewBox="0 0 500 500">
+              <title>Circular Text Path</title>
+              <defs>
+                <path id="textcircle" d="M250,400
+                             a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z" transform="rotate(12,250,250)" />
+              </defs>
+              <g class="textcircle">
+                <text textLength="940">
+                  <textPath 
+                            xlink:href="#textcircle" 
+                            aria-label="CSS & SVG are awesome" 
+                            textLength="940">
+                            {{ " | { Kamal } . { Prakash } . { Verma } | " }}
+                  </textPath>
+                </text>
+              </g>
+            </svg>
+          </span>
+          </a> 
+         
+          
+          <span class="email-id"><a href="mailTo:kamalv534@gmail.com">kamalv534{{'@'}}gmail.com</a></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" [routerLink]="['home']" [routerLinkActive]="['active']">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['about']" [routerLinkActive]="['active']">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['experience']" [routerLinkActive]="['active']">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['portfolio']" [routerLinkActive]="['active']">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['contact']" [routerLinkActive]="['active']">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>

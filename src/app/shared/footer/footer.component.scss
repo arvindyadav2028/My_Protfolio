@@ -1,0 +1,17 @@
+.copyright{
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+    position: relative;
+    &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 200px;
+    background: #45e551;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+}
+}

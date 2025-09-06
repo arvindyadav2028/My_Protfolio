@@ -1,0 +1,124 @@
+ [
+    {
+        "profile": [
+            {
+                "name": "Kamal Prakash Verma",
+                "email": "kamalv534@gmail.com",
+                "phone": "9716518617",
+                "linkedin": "www.linkedin.com/in/kamalprakash",
+                "twitter": "twitter/kamal",
+                "desc": "My Description"
+            }
+        ],
+        "education": [
+            {
+                "post-diploma": "Post Graduate Diploma In Web Designing",
+                "post-graduation": "Post Graduation",
+                "graduation": "Graduation"
+            }
+        ],
+        "institution": [
+            {
+                "id": 1,
+                "institution-name": "Government Polytechnic Lucknow",
+                "address": "Lucknow",
+                "course": "PGDWD"
+            },
+            {
+                "id": 2,
+                "institution-name": "Mahatma Gandhi Kashi Vidyapith",
+                "address": "Varansi",
+                "course": "PG"
+            }
+        ],
+        "skills": [
+            {
+                "id": 1,
+                "skil": "Angular",
+                "img": "../../assets/images/angulars_icon.png",
+                "alt":"Angular Img"
+            },
+            {
+                "id": 2,
+                "skil": "Reactjs",
+                "img": "../../assets/images/react-icon.png",
+                "alt":"Reactjs Img"
+            },
+            {
+                "id": 3,
+                "skil": "Javascript",
+                "img": "../../assets/images/javascript_icon.png"
+            },
+            {
+                "id": 4,
+                "skil": ".Net Web API",
+                "img": "../../assets/images/asp-dotnet.png"
+            },
+            {
+                "id": 5,
+                "skil": "C#",
+                "img": "../../assets/images/c.png"
+            },
+            {
+                "id": 6,
+                "skil": "MySQL",
+                "img": "../../assets/images/sql.png"
+            },
+            {
+                "id": 7,
+                "skil": "HTML",
+                "img": "../../assets/images/html-5.png"
+            },
+            {
+                "id": 8,
+                "skil": "CSS3",
+                "img": "../../assets/images/css_icon.png"
+            },
+            {
+                "id": 9,
+                "skil": "SASS CSS",
+                "img": "../../assets/images/sass_icon.png"
+            },
+            {
+                "id": 10,
+                "skil": "Less Css",
+                "img": "../../assets/images/less_icon.png"
+            },
+            {
+                "id": 11,
+                "skil": "Restful API",
+                "img": "../../assets/images/API_icon.png"
+            },
+            {
+                "id": 12,
+                "skil": ".Net Web API",
+                "img": "../../assets/images/asp-dotnet.png"
+            },
+            {
+                "id": 13,
+                "skil": "Angular Material",
+                "img": "../../assets/images/material_icon.png"
+            },
+            {
+                "id": 14,
+                "skil": "Kendo UI",
+                "img": "../../assets/images/kendoui_icon.png"
+            },
+            {
+                "id": 15,
+                "skil": "Git",
+                "img": "../../assets/images/git.png"
+            },
+            {
+                "id": 16,
+                "skil": "Bootstrap",
+                "img": "../../assets/images/bootstrap_icon.png"
+            },
+            {
+                "id": 17,
+                "skil": "GSAP",
+                "img": "../../assets/images/gsap_icon.png"
+            }
+        ]
+    }
+]

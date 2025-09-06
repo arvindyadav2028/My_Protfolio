@@ -1,0 +1,55 @@
+
+<section class="contact-section">
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="contact-details">
+                <h2>Got an idea? Let’s turn it into reality!</h2>
+              <p>
+                I'm eager to explore new opportunities and engaging projects. If you're interested in hiring me, or if you have any questions about web development, feel free to get in touch!
+              </p>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <div class="contact-form">
+              <h2 class="mb-4 common-heading">drop me a line</h2>
+                <form (submit)="sendEmail($event)">
+                    <div class="mb-3">
+                      <label for="name">Full Name:</label>
+                      <input type="text" class="form-control" id="name" name="from_name" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                      <label for="email">Email:</label>
+                      <input type="email" class="form-control" id="email" name="from_email" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                      <label for="message">Message:</label>
+                      <textarea id="message" class="form-control" name="message" required></textarea>
+                    </div>
+                  
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                    
+
+                    @if(error){
+                        <div class="alert alert-danger mt-2">
+                            {{error}}
+                        </div>
+                    }
+                    @if(message){
+                        <div class="alert alert-success mt-2">
+                            {{message}}
+                        </div>
+                    }
+
+                  </form>
+
+
+            </div>
+        </div>
+    </div>
+</section>

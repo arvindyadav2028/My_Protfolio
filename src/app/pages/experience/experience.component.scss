@@ -1,0 +1,86 @@
+
+.experience-section{
+    .exp-title{
+        margin: 50px 0 100px 100px;
+    }
+    .company-logo{
+        padding: 25px;
+        border-radius: 25px;
+        display:block;
+        margin-top: 120px;
+         img {
+               width: 75%;
+             }
+    }
+
+    .exp-box{
+        background: rgba(42, 43, 56, .3);
+        border: 0.03rem solid #2a2b376b;
+        -webkit-backdrop-filter: blur(104px);
+        backdrop-filter: blur(104px);
+        border-radius: 3rem;
+        padding: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .company-details{
+        .post {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 22px;
+        }
+        .detail-text {
+            color: #595a71;
+            .responsibilities {
+                display: block;
+                font-size: 20px;
+                color: #ff6e64;
+                margin: 15px 0 3px;
+                border-bottom: 0.03rem solid #1f1f1f;
+            }
+        }
+        ul.used-tech {
+            margin: 0;
+            padding:0;
+            list-style: none;
+            li {
+                display: inline-block;
+                .tech {
+                    background: rgb(45 46 212 / 10%);
+                    padding: 1px 13px 5px;
+                    display: inline-block;
+                    margin: 0 10px;
+                    border-radius: 15px;
+                }
+            }
+        }
+        .company-links {
+            display: inline-block;
+            img {
+                width: 28px;
+            }
+        }
+    }
+
+}
+
+@media(max-width:1200px) {
+    .experience-section
+    {
+         padding: 0 15px;
+    }
+}
+
+@media(max-width:767px){
+    .experience-section{
+        padding: 0 15px;
+        .exp-title{
+            margin:25px;
+        }
+        .company-logo{
+            padding: 25px;
+            margin-top: 25px;
+        }
+    }
+   
+}

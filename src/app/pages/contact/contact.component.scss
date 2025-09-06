@@ -1,0 +1,20 @@
+
+.contact-section {
+    padding: 100px 0;
+    .contact-details{
+        padding: 45px;
+        h2{
+            margin-bottom: 25px;
+        }
+    }
+}
+
+
+@media(max-width:1200px){
+    .contact-section{
+        padding: 60px 15px;
+        .contact-details{
+            padding: 45px 15px;
+        }
+    }
+}

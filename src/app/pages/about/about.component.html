@@ -1,0 +1,82 @@
+<section class="about-section">
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="profile-headline">
+                <h2>passionate about  <span class="difrence">turning ideas</span> into products.  </h2>
+            </div>
+           
+        </div>
+
+        <div class="col-md-4">
+            <!-- <span class="abstract-bg">
+               <span class="first-img">
+                <img src="../../../assets/images/neon-line-bg.jpg" alt="" />
+               </span>
+               <span class="second-img">
+                <img src="../../../assets/images/neon-line-bg.jpg" alt="" />
+               </span>
+            </span> -->
+
+            <div class="lines-container">
+  <svg viewBox="0 0 800 800">
+    <ng-container *ngFor="let path of wavePaths">
+      <path #lineEl [attr.d]="path.d"
+            [attr.stroke]="path.color"
+            stroke-width="3"
+            fill="none" />
+    </ng-container>
+  </svg>
+</div>
+
+       
+        </div>
+
+    </div>
+
+    <div class="row">
+            <div class="col-md-5">
+
+            </div>
+            <div class="col-md-7">
+               <div class="about-me">
+                <p>
+                    I'm a creative Sr. Front End Architect with ten years' expertise in crafting user-friendly
+                    digital interfaces. I excel at simplifying complex concepts into visually appealing designs, 
+                    blending creativity with practicality to enhance user experiences.
+                </p>
+               </div>
+            </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-12">
+            <div class="skilss-heading">
+                <h3> Here are some tools & technologies I've been using. </h3>
+            </div>
+            
+         </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="skilss">
+                <ul>
+
+                     @for(s of skillsData; track s.id){
+                    <li>
+                        <div #skillCard class="skill-card">
+                        <span class="icon">
+                            <img src="{{s.img}}" alt="{{s.alt}}" />
+                        </span>
+                           {{s.skil}}
+                        </div>
+                    </li>
+                    } 
+                </ul>
+            </div>
+         </div>
+         
+    </div>
+
+</section>

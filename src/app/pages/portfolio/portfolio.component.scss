@@ -1,0 +1,134 @@
+.portfolio-section {
+    padding: 100px 0px 100px 120px;
+    .project-card{
+        margin: 10rem auto;
+        background: linear-gradient(180deg, rgba(35, 37, 49, .5), rgba(15, 15, 24, .5));
+        border: .2rem solid #20222e;
+        box-sizing: border-box;
+        -webkit-backdrop-filter: blur(54px);
+        backdrop-filter: blur(54px);
+        border-radius: 7.3rem;
+        display: flex;
+        align-items: center;
+        padding: 3rem;
+        position: relative;
+        &::after{
+            content: "TRU";
+            display: block;
+            position: absolute;
+            top: -3rem;
+            left: -5rem;
+            width: 15rem;
+            height:8rem;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background: transparent;
+            font-size: 8rem;
+            font-family: Mark-Pro-Bold;
+            color: transparent;
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+        }
+    }
+    .project-card.nutra{
+        &::after{
+            content: "Nutra";
+        }
+    }
+    .project-card.appia{
+        &::after{
+            content: "Appia";
+        }
+    }
+    .project-card.sw{
+        &::after{
+            content: "Sw";
+        }
+    }
+    .tech-card{
+        padding-top: 50px;
+        background: #09090d;
+        padding: 2rem;
+        border-radius: 3rem;
+        ul{
+            margin:0;
+            padding:0;
+            list-style: none;
+            li{
+                margin: 10px 0;
+            }
+        }
+    }
+    .project-details-info{
+        padding-top: 40px;
+        h3{
+            font-size: 40px;
+            margin: 2rem 0;
+        }
+        p{
+            font-weight: normal;
+            color: #595a71;
+        }
+    }
+    .projectinfo-card{
+        width: 35rem;
+        height: 30rem;
+        background-size: cover;
+        position: relative;
+        border-radius: 5.3rem;
+        overflow: hidden;
+        margin-top: -100px;
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            border-radius: 5.3rem;
+            transition: opacity .3s;
+            right: 0;
+             margin: 0 auto;
+        }
+        img.default-img{
+            opacity:1;
+        }
+        &:hover{
+            img.onhover-img{
+                opacity: 1;
+            }
+        }
+    }
+}
+@media(max-width:1350px) {
+    .portfolio-section{
+        padding: 100px 0px 100px 0;
+        .project-card{
+            &::after{
+                left: 0;
+            }
+        }
+    .projectinfo-card{
+            width: 100%;
+            height: 28rem;
+        }
+    .project-details-info{
+        h3{
+            font-size: 34px;
+        }
+    }
+    }
+}
+@media(max-width:767px){
+     .portfolio-section{
+        padding-left: 15px;
+        .project-card{
+            border-radius: 4.3rem;
+            padding: 1em;
+            &::after{
+                left: 0;
+            }
+        }
+        .projectinfo-card{
+            width: 100%;
+            margin-top: 0;
+        }
+    }
+}
