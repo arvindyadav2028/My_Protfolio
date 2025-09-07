@@ -109,7 +109,6 @@ ngAfterViewInit(): void {
      this.commonService.getData().subscribe(data => {
       this.personaldata = data;
       this.skillsData = data[0].skills;
-      console.log(this.skillsData)
      })
    }
 
