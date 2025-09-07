@@ -78,4 +78,12 @@
 }
 
 
-
+@media(max-width:479px){
+  .header-wrapper{
+    .email-id{
+      a{
+        margin-left: 0;
+      }
+    }
+  }
+}
