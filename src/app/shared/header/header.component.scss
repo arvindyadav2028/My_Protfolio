@@ -8,7 +8,7 @@
     }
     .email-id a {
         font-size: 20px;
-        color: #ffffff;
+        color: var(--primary-text-color);
         text-decoration: none;
         display: inline-block;
         margin-left: 50px;
@@ -18,7 +18,20 @@
     .navbar-nav{
         li{
           a.nav-link{
-            font-family:Circular-Std-Book;
+            font-family: Circular-Std-Book;
+            color: var(--primary-text-color);
+
+            &.active {
+              // Ensure the active link is also using the theme color
+              color: var(--primary-text-color) !important; 
+            }
+          }
+          .theme-toggle-btn {
+            background: none; border: none; padding-top: 10px;
+            cursor: pointer;
+            i {
+              font-size: 25px; color: var(--primary-text-color);
+            }
           }
         }
       
@@ -39,12 +52,13 @@
       font-size: 24px;
       line-height: 15px;
       z-index: 1;
+      color: var(--primary-text-color);
       .bottom-logo {
           margin-left: 9.5px;
       }
   }
   text {
-      fill: #ffffff;
+      fill: var(--primary-text-color);
       font-family: "Lato", sans-serif;
       font-size: 28px;
       font-weight: 500;
