@@ -50,10 +50,32 @@
 }
 
 
+body {
+  // Light theme variables (default)
+  --primary-bg-color: #ffffff;
+  --primary-text-color: #111111;
+  --secondary-text-color: #555555;
+  --header-bg-color: #f8f9fa;
+  --card-bg-gradient: linear-gradient(180deg, #f2f2f2, #e6e6e6);
+  --card-border-color: #dddddd;
+  --form-bg-color: #eeeeee;
+  --text-stroke-color: rgba(0, 0, 0, 0.3);
+
+  &.dark-theme {
+    // Dark theme variables
+    --primary-bg-color: #000000;
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #595a71;
+    --header-bg-color: #000000;
+    --card-bg-gradient: linear-gradient(180deg, rgba(35, 37, 49, .5), rgba(15, 15, 24, .5));
+    --card-border-color: #20222e;
+    --form-bg-color: #2b2b2b;
+    --text-stroke-color: rgba(255, 255, 255, 0.3);
+  }
+}
 
 .bg-dark {
-    --bs-bg-opacity: 1;
-    background-color: rgb(0 0 0) !important;
+    background-color: var(--header-bg-color) !important;
 }
 .navbar {
         --bs-navbar-toggler-focus-width:0;
@@ -73,14 +95,14 @@
 }
 .form-control:focus,
 .form-control {
-    background: #2b2b2b;
-    border: #2b2b2b;
+    background: var(--form-bg-color);
+    border-color: var(--form-bg-color);
     box-shadow: none;
-    color: #ffffff;
+    color: var(--primary-text-color);
 }
 .form-control {
     min-height: 48px;
-    color: #ffffff;
+    color: var(--primary-text-color);
 }
 
 body{
@@ -88,7 +110,8 @@ body{
     font-weight: normal;
     line-height: 26px;
     font-size: 18px;
-    color: #ffffff;
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
