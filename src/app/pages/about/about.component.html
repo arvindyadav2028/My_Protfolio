@@ -22,7 +22,6 @@
   <svg viewBox="0 0 800 800">
     <ng-container *ngFor="let path of wavePaths">
       <path #lineEl [attr.d]="path.d"
-            [attr.stroke]="path.color"
             stroke-width="3"
             fill="none" />
     </ng-container>

@@ -3,10 +3,10 @@
     min-height: 51px;
 }
 .body-container-wrapper {
-    background: #000000;
+    background: var(--primary-bg-color);
 }
 footer.footer-container-wrapper {
-    background: #000;
+    background: var(--primary-bg-color);
     text-align: center;
     padding: 15px 0;
 }
