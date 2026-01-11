@@ -14,8 +14,8 @@
     }
 
     .exp-box{
-        background: rgba(42, 43, 56, .3);
-        border: 0.03rem solid #2a2b376b;
+        background: var(--card-bg-gradient);
+        border: 0.03rem solid var(--card-border-color);
         -webkit-backdrop-filter: blur(104px);
         backdrop-filter: blur(104px);
         border-radius: 3rem;
@@ -25,12 +25,12 @@
 
     .company-details{
         .post {
-            color: #ffffff;
+            color: var(--primary-text-color);
             text-decoration: none;
             font-size: 22px;
         }
         .detail-text {
-            color: #595a71;
+            color: var(--secondary-text-color);
             .responsibilities {
                 display: block;
                 font-size: 20px;

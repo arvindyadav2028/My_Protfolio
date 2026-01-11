@@ -7,7 +7,7 @@
             position: absolute;
             top: 110px;
             left: 0;
-            color: #ffffff;
+            color: var(--primary-text-color);
             h2{
                 //font-family:ChamberiHeadline-Bold;
                 font-family:Mark-Pro-Bold;
@@ -51,11 +51,9 @@
                 a{
                     display: block;
                     margin: 25px 0;
-                    img{
-                        width: 28px;
-                    }
-                    img.big-icon{
-                        width: 22px;
+                    i {
+                        font-size: 24px;
+                        color: var(--primary-text-color);
                     }
                 }
             }
@@ -85,7 +83,7 @@
     }
     .profile-description {
         padding-top: 150px;
-        color: #ffffff;
+        color: var(--primary-text-color);
         position: relative;
         height: 100%;
         h4{
@@ -93,7 +91,7 @@
         }
         p{
             font-size: 22px;
-            color: #969696;
+            color: var(--secondary-text-color);
         }
         
         .download-btn{
@@ -210,7 +208,7 @@
     .project-title{
         font-family:Circular-Std-Book;
         font-size: 18px;
-        color: #969696;
+        color: var(--secondary-text-color);
     }
     .project-box{
         border-radius: 2rem;

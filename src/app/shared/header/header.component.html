@@ -55,6 +55,12 @@
             <li class="nav-item">
               <a class="nav-link" [routerLink]="['contact']" [routerLinkActive]="['active']">Contact</a>
             </li>
+            <li class="nav-item">
+              <button class="btn theme-toggle-btn" (click)="toggleTheme()">
+                <i *ngIf="themeService.currentTheme() === 'dark'" class="fa-solid fa-sun" aria-label="Switch to light mode"></i>
+                <i *ngIf="themeService.currentTheme() === 'light'" class="fa-solid fa-moon" aria-label="Switch to dark mode"></i>
+              </button>
+            </li>
           </ul>
         </div>
       </div>
